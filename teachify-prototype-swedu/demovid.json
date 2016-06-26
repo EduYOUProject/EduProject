@@ -1,0 +1,66 @@
+{
+    "numberOfQuestions" : "4",
+    "nameOfLesson": "Mitosis",
+    "youtubeVideoAPICode": "L0k-enzoeOM",
+	"0": {
+		"questionType": "multipleChoice",
+		"q": "How many chromosomes does a human being have?",
+		"correctAnswer": "2",
+		"answers": [
+			"48",
+			"36",
+			"46",
+			"25"
+		],
+		"popupTime": "8",
+		"jumpBackTime": "0"
+	},
+
+
+	"1": {
+		"questionType": "multipleChoice",
+		"q": "what is it called when chromatin condenses and coilto produce DNA?",
+		"correctAnswer": "0",
+		"answers": [
+			"Prophase",
+			"Mitosis",
+			"Centrosomes",
+			"Protease"
+		],
+		"popupTime": "274",
+		"jumpBackTime": "254"
+
+	},
+
+	"2": {
+		"questionType": "multipleChoice",
+		"q": "What do motor protiens do?",
+		"correctAnswer": "1",
+		"answers": [
+			"Break down DNA",
+			"Move Chromosomes around",
+			"Move chromatin around",
+			"break down centomeres"
+		],
+		"popupTime": "348",
+		"jumpBackTime": "328"
+
+	},
+
+
+	"3": {
+		"questionType": "multipleChoice",
+		"q": "What is the process where cell structure are recontructed?",
+		"correctAnswer": "3",
+		"answers": [
+			"Anaphase",
+			"Interphase",
+			"Metaphase",
+			"Telophase"
+		],
+		"popupTime": "565",
+		"jumpBackTime": "545"
+
+	}
+
+}
