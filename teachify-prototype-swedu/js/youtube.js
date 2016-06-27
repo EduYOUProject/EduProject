@@ -1,38 +1,3 @@
-// JSON File Interface
-
-function fetchJSONFile(path, callback) {
-   var httpRequest = new XMLHttpRequest();
-   httpRequest.onreadystatechange = function() {
-       if (httpRequest.readyState === 4) {
-           if (httpRequest.status < 400) {
-               var data = (httpRequest.responseText);
-               if (callback) callback(data);
-           }
-       }
-   };
-   httpRequest.open('GET', path);
-   httpRequest.send();
-}
-
-
-// this requests the file and executes a callback with the parsed result once
-//   it is available
-var jsonSampleFileName = 'vid1.json'
-fetchJSONFile(jsonSampleFileName, function(data){
-   console.log(data);
-   return data;
-});
-
-
-
-
-
-
-
-
-
-
-
 var windowWidth = window.innerWidth;
 var windowHeight = window.innerHeight;
 
