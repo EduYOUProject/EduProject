@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="http://vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
+    <link href="plugins/rangeslider-videojs-master/src/rangeslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/annotator-master/css/annotator.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <video id="vid1"
+      class="video-js vjs-default-skin"
+      controls
+      preload="auto"
+      width="640"
+      height="360"
+      data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=lAwYodrBr2Q"}], "youtube": { "ytControls": 0 } }'>
+    </video>
+    <br><br>
+    <button id="playPause">Play/Pause</button>
+    <button id="makeBig">Big</button>
+    <button id="makeSmall">Small</button>
+    <button id="makeNormal">Normal</button>
+    <button id="range-slider">Show Rangeslider</button>
+    <button id="hide-rangeslider">Hide Rangeslider</button>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="http://vjs.zencdn.net/5.10.4/video.js"></script>
+    <script src="plugins/videojs-youtube-master/src/Youtube.js"></script>
+    <script src="plugins/rangeslider-videojs-master/src/rangeslider.js"></script>
+    <script src="plugins/annotator-master/src/annotator.min.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
