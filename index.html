@@ -1,45 +1,166 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> My Video Player </title>
-</head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brainitz Landing Page</title>
+!
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+!
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></
+script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/
+respond.min.js"></script>
+<![endif]-->
+<style>
+.navbar-brand {
+font-size:1.8em;
+color:blue;
+}
+#topContainer {
+background-image:url("Brainitz_landing_page_photo.jpg");
+height:400px;
+width:100%;
+background-size:cover;
+}
+#topRow {
+margin-top:100px;
+text-align:center;
+}
+#topRow h1 {
+font-size:300%;
+}
+#emailSignup {
+margin-top:50px;
+}
+.bold {
+font-weight:bold;
+color:black;
+}
+.marginTop {
+margin-top:30px;
 
-<div style="text-align:left">
-  <button onclick="playPause()">Play/Pause</button>
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br><br>
-  <video id="video1" width="420">
-    <source src="mov_bbb.mp4" type="video/mp4">
-    <source src="mov_bbb.ogg" type="video/ogg">
-    Your browser does not support HTML5 video.
-  </video>
+}
+.center {
+text-align:center;
+}
+.title {
+margin-top:100px;
+font-size:300%;
+}
+#footer {
+background-color:#B0D1FB;
+padding-top:70px;
+width:100%;
+}
+.marginBottom {
+margin-bottom:30px;
+}
+.teachifyImage {
+width:250px;
+}
+.lead {
+font-weight:bold;
+font-size:200%;
+color:red;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+<div class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="collapse" datatarget=".
+navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand">Brainitz</a>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#topContainer">Home</a></li>
+<li><a href="#details">About</a></li>
+<li><a href="#footer">Teachers</a></li>
+</ul>
+<form class="navbar-form navbar-right">
+
+<button type="submit" class="btn btn-danger">Sign Up/Log In</button>
+<button type="submit" class="btn btn-primary">F.A.Q.</button>
+<button type="submit" class="btn btn-success">Pricing</button>
+</form>
+</div>
+</div>
 </div>
 
+<div class="container contentContainer" id="topContainer">
+<div class="row">
+<div class="col-md-6 col-md-offset-3" id="topRow">
+<h1 class="marginTop"><b>Brainitz</b></h1>
+
+
+<form class="marginTop">
+
+</form>
+</div>
+</div>
+</div>
+<div class="container contentContainer" id="details">
+<div class="row" class="center">
+<h1 class="center title">What Is <b>Brainitz</b>?</h1>
+</div>
+<div class="row marginBottom">
+<div class="col-md-4 marginTop">
+<h2><span class="glyphicon glyphicons-clock"></span> SAVE TIME</h2>
+<p>Simply add questions
+throughout a chosen video once.
+Use the video lesson in class, for
+homework for absent students,
+for review.
+</p>
+
+</div>
+<div class="col-md-4 marginTop">
+<h2><span class="glyphicon glyphicon-certificate"></span> STUDENT ACHIEVEMENT</h2>
+<p>Questions pop up
+throughout the video lesson. If an
+answer is incorrect the video
+backs up to reteach. Short answer
+essays are evaluated in real time</p>
+
+</div>
+<div class="col-md-4 marginTop">
+<h2><span class="glyphicon glyphicons-roundabout"></span> COLLABORATE</h2>
+<p>Evaluate the student data. Share your lessons, use the lessons from other teachers.
+</p>
+
+</div>
+</div>
+!
+</div>
+<div class="container contentContainer" id="footer">
+<div class="row">
+<h1 class="center title">Take the Tour!</h1>
+<p class="lead center">Even better, try it for yourself!</p>
+<p class="center"><img src="teachify.png" class="teachifyImage" />
+</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/
+jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as
+needed -->
+<script src="js/bootstrap.min.js"></script>
 <script>
-var myVideo = document.getElementById("video1");
-
-function playPause() {
-    if (myVideo.paused)
-        myVideo.play();
-    else
-        myVideo.pause();
-}
-
-function makeBig() {
-    myVideo.width = 896;
-}
-
-function makeSmall() {
-    myVideo.width = 360;
-}
-
-function makeNormal() {
-    myVideo.width = 460;
-}
+$(".contentContainer").css("min-height",$(window).height());
 </script>
-
-<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny -- Silly!!</a>.</p>
+!
 </body>
 </html>
