@@ -4,10 +4,10 @@
 }
 
 #topContainer {
-  background-image:url("../images/Brainitz_landing_page_photo.jpg");
+  background-image:url("../images/Brainitz_landing_page_photo_v2.jpg");
   height:400px;
-  width:100%;
-  background-size:cover;
+  width: auto;
+  background-size: cover;
 }
 
 #topRow {
