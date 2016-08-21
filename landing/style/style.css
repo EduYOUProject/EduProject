@@ -60,3 +60,11 @@
   font-size:200%;
   color:red;
 }
+
+.vjs-control-bar {
+  display: none;
+}
+
+.vjs-caption-settings {
+  display: none;
+}
